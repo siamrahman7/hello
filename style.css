@@ -1,0 +1,17 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.sec1{
+  border: 1px solid black;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  background-color: #1b1b1b;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+.sec1 p{
+  color:crimson;
+}
