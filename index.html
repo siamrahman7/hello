@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home : SiamRahman</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/514cc8e909.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">SiamRahman</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+<!--banner---->
+  <div class="banner">
+     <div class="discp">
+        <h2>HELLO , I'm <span>Siam Rahman</span></h2>i am a Professional Web Developer.
+        <br> Also I'm a Youtuber and Streamer <br><br>
+        
+        <i style="font-size: 30px; color: rgb(66, 103, 178); margin: 5px; padding:5px ;" class="fab fa-facebook"></i>
+        <i style="font-size: 30px; color: rgb(188, 42, 141); margin: 5px; padding:5px"  class="fab fa-instagram"></i>
+        <i style="font-size: 30px; color: rgb(255, 255, 255);  margin: 5px; padding:5px"  class="fab fa-github"></i>
+        <i style="font-size: 30px; color: rgb(255, 0, 0);  margin: 5px; padding:5px"  class="fab fa-youtube"></i>
+     </div>
+  </div>
+ <!--myself-->
+ <div class="container">
+  <div class="image">
+    <img id="info1" class="child" src="sr3.jpg" alt="owner-img">
+    <p id="info" class="child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt porro impedit, ex laudantium inventore nam temporibus consequatur ullam at beatae.</p>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+</body>
+</html>
